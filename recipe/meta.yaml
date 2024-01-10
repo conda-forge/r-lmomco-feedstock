@@ -1,4 +1,4 @@
-{% set version = "2.4.11" %}
+{% set version = "2.4.13" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lmomco_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lmomco/lmomco_{{ version }}.tar.gz
-  sha256: 842a91a85da7d37b09c6a071a0ae7263f62e86330ca8e0865535363f34ddda1f
+  sha256: 1acd60f94902d90f842f4989ca1f07fac7f6713b7b967a65ae32eea0764b6dc4
 
 build:
   merge_build_host: true  # [win]
