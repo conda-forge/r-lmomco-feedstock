@@ -1,4 +1,4 @@
-{% set version = "2.5.1" %}
+{% set version = "2.5.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lmomco_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lmomco/lmomco_{{ version }}.tar.gz
-  sha256: 647d980fb853e1f059a305c36aa02842226fd4051300ce1c0fabc7ad58a9784a
+  sha256: ab3943c1ccda55cea49f77536d879c4cf9b5fd6107d0dc915e03746157299f52
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
